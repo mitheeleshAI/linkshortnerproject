@@ -169,25 +169,25 @@ export default function Home() {
             <div>
               <h4 className="text-white font-semibold mb-4">Product</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition">Features</a></li>
-                <li><a href="#" className="hover:text-white transition">Pricing</a></li>
-                <li><a href="#" className="hover:text-white transition">API</a></li>
+                <li><a href="javascript:void(0)" className="hover:text-white transition cursor-pointer">Features</a></li>
+                <li><a href="javascript:void(0)" className="hover:text-white transition cursor-pointer">Pricing</a></li>
+                <li><a href="javascript:void(0)" className="hover:text-white transition cursor-pointer">API</a></li>
               </ul>
             </div>
             <div>
               <h4 className="text-white font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition">Blog</a></li>
-                <li><a href="#" className="hover:text-white transition">Careers</a></li>
-                <li><a href="#" className="hover:text-white transition">Contact</a></li>
+                <li><a href="javascript:void(0)" className="hover:text-white transition cursor-pointer">Blog</a></li>
+                <li><a href="javascript:void(0)" className="hover:text-white transition cursor-pointer">Careers</a></li>
+                <li><a href="javascript:void(0)" className="hover:text-white transition cursor-pointer">Contact</a></li>
               </ul>
             </div>
             <div>
               <h4 className="text-white font-semibold mb-4">Legal</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition">Privacy</a></li>
-                <li><a href="#" className="hover:text-white transition">Terms</a></li>
-                <li><a href="#" className="hover:text-white transition">Security</a></li>
+                <li><a href="javascript:void(0)" className="hover:text-white transition cursor-pointer">Privacy</a></li>
+                <li><a href="javascript:void(0)" className="hover:text-white transition cursor-pointer">Terms</a></li>
+                <li><a href="javascript:void(0)" className="hover:text-white transition cursor-pointer">Security</a></li>
               </ul>
             </div>
           </div>
@@ -196,9 +196,9 @@ export default function Home() {
               &copy; 2024 Link Shortener. All rights reserved.
             </p>
             <div className="flex gap-6 mt-4 sm:mt-0 text-sm">
-              <a href="#" className="hover:text-white transition">Twitter</a>
-              <a href="#" className="hover:text-white transition">LinkedIn</a>
-              <a href="#" className="hover:text-white transition">GitHub</a>
+              <a href="javascript:void(0)" className="hover:text-white transition cursor-pointer">Twitter</a>
+              <a href="javascript:void(0)" className="hover:text-white transition cursor-pointer">LinkedIn</a>
+              <a href="javascript:void(0)" className="hover:text-white transition cursor-pointer">GitHub</a>
             </div>
           </div>
         </div>
