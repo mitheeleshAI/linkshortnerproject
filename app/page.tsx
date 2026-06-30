@@ -1,5 +1,6 @@
 import { SignInButton, SignUpButton, Show, UserButton } from '@clerk/nextjs'
 import { Button } from '@/components/ui/button'
+import SignInRedirector from '@/components/auth/SignInRedirector'
 import { Link2, Zap, BarChart3, Share2, Lock, Users } from 'lucide-react'
 
 export default function Home() {
@@ -46,8 +47,11 @@ export default function Home() {
             <h1 className="text-2xl font-bold">Link Shortener</h1>
           </div>
           <div className="flex gap-2 sm:gap-4">
+            <SignInRedirector />
             <Show when="signed-out">
-              <SignInButton />
+              <SignInButton>
+                <Button variant="ghost" onClick={() => sessionStorage.setItem('afterSignIn', 'true')}>Sign In</Button>
+              </SignInButton>
               <SignUpButton />
             </Show>
             <Show when="signed-in">
@@ -67,9 +71,9 @@ export default function Home() {
                 Shortened & Tracked
               </span>
             </h2>
-            
+
             <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-              Create custom short links, track analytics, and share with confidence. 
+              Create custom short links, track analytics, and share with confidence.
               Manage all your links in one powerful platform.
             </p>
 
@@ -81,7 +85,7 @@ export default function Home() {
                   </Button>
                 </SignUpButton>
                 <SignInButton>
-                  <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto" onClick={() => sessionStorage.setItem('afterSignIn', 'true')}>
                     Sign In
                   </Button>
                 </SignInButton>
@@ -115,8 +119,8 @@ export default function Home() {
             {features.map((feature, index) => {
               const Icon = feature.icon
               return (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="flex flex-col items-start p-6 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors"
                 >
                   <div className="mb-4 p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
